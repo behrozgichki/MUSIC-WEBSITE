@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/input.css">
 </head>
 
 <body>
-    <nav class="navbar bg-[#270082] text-white flex justify-between flex-wrap p-6 items-center ">
-        <div class="head-text text-[2.5rem] font-roboto font-bold pr-20 pl-20 ">myTunes</div>
+    <nav class="navbar bg-[#270082] text-white flex justify-between flex-wrap p-6  items-center">
+        <div class="head-text text-[2.5rem] font-roboto font-bold pr-20 pl-20 mx-auto mx-0 md:text-[2.5rem] font-roboto font-bold pr-20 pl-20">myTunes</div>
         <div
             class="nav-items flex justify-center flex-wrap gap-9 text-2xl items-center pr-20 pl-20 font-josefin font-[350] ">
             <p>Overview</p>
@@ -19,7 +20,25 @@
         </div>
     </nav>
     <main>
-        <div class="bg-[url(/assets/main-image)]">my tunes </div>
+        <!-- content one started -->
+        <div  style="background-image: url(assets/main-image.png);
+         width: 100%;
+          height: 1000px;
+           background-size: cover;">
+            <div class="main-text font-josefin ">
+                <h1>myTunes</h1>
+                <h3 class="second-text font-josefin">Your music, movies, and TV shows take centre stage.</h3>
+                <p class="third-text font-josefin">myTunes is the best way to organize and enjoy the music, movies, and TV shows you already have -
+and shop for the once you want. Enjoy all the entertainment myTunes has to offer on your Mac and PC.</p>
+            </div>
+        </div>
+        <!-- content one ended -->
+
+        <!-- content two started -->
+         <div class="content-two bg-amber-950"></div>
+        <!-- content two ended -->
+
+
     </main>
     <footer></footer>
 </body>
