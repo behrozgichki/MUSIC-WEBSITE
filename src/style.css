@@ -102,8 +102,10 @@ padding-bottom: 200px;
     grid-template-columns: repeat(2 , 1fr);
 }
 .footer{
-    gap: 80px;
-    padding: 84px;
+    padding: 64px;
+    display: flex;
+    justify-content: space-evenly;
+
 }
 .footer h4{
     padding-bottom: 16px;
