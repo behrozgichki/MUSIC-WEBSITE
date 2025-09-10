@@ -220,6 +220,9 @@
   .m-5 {
     margin: calc(var(--spacing) * 5);
   }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
@@ -276,6 +279,9 @@
   }
   .max-w-4xl {
     max-width: var(--container-4xl);
+  }
+  .max-w-\[600px\] {
+    max-width: 600px;
   }
   .max-w-full {
     max-width: 100%;
@@ -368,6 +374,9 @@
   }
   .bg-no-repeat {
     background-repeat: no-repeat;
+  }
+  .object-contain {
+    object-fit: contain;
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
@@ -668,6 +677,16 @@
       height: 600px;
     }
   }
+  .sm\:w-\[80\%\] {
+    @media (width >= 40rem) {
+      width: 80%;
+    }
+  }
+  .sm\:w-\[600px\] {
+    @media (width >= 40rem) {
+      width: 600px;
+    }
+  }
   .sm\:text-2xl {
     @media (width >= 40rem) {
       font-size: var(--text-2xl);
@@ -684,6 +703,12 @@
     @media (width >= 40rem) {
       font-size: var(--text-lg);
       line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+  }
+  .sm\:text-xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
   .md\:relative {
@@ -724,6 +749,21 @@
   .md\:h-\[800px\] {
     @media (width >= 48rem) {
       height: 800px;
+    }
+  }
+  .md\:w-\[40rem\] {
+    @media (width >= 48rem) {
+      width: 40rem;
+    }
+  }
+  .md\:w-\[60\%\] {
+    @media (width >= 48rem) {
+      width: 60%;
+    }
+  }
+  .md\:w-\[600px\] {
+    @media (width >= 48rem) {
+      width: 600px;
     }
   }
   .md\:flex-row {
@@ -781,6 +821,41 @@
   .lg\:h-\[1000px\] {
     @media (width >= 64rem) {
       height: 1000px;
+    }
+  }
+  .lg\:w-\[40rem\] {
+    @media (width >= 64rem) {
+      width: 40rem;
+    }
+  }
+  .lg\:w-\[600px\] {
+    @media (width >= 64rem) {
+      width: 600px;
+    }
+  }
+  .lg\:w-\[rem\] {
+    @media (width >= 64rem) {
+      width: rem;
+    }
+  }
+  .lg\:flex-row {
+    @media (width >= 64rem) {
+      flex-direction: row;
+    }
+  }
+  .lg\:p-10 {
+    @media (width >= 64rem) {
+      padding: calc(var(--spacing) * 10);
+    }
+  }
+  .lg\:pt-20 {
+    @media (width >= 64rem) {
+      padding-top: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:pt-24 {
+    @media (width >= 64rem) {
+      padding-top: calc(var(--spacing) * 24);
     }
   }
   .lg\:text-2xl {
