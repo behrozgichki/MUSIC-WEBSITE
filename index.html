@@ -15,47 +15,56 @@
 
 <body>
     <!-- navbar started -->
-    <nav class="navbar bg-[#270082] text-white flex justify-between flex-wrap p-6  items-center">
+    <nav class="navbar bg-[#270082] text-white flex justify-between flex-wrap p-6 ">
         <div class="head-text text-[2.5rem] font-roboto font-bold pr-20 pl-20 ">myTunes</div>
         <div
-            class="nav-items flex justify-center flex-wrap gap-9 text-2xl items-center pr-20 pl-20 font-josefin font-[350] ">
+            class="nav-items flex  text-2xl items-center pr-20 pl-20 font-josefin font-[350] gap-9 absolute md:relative flex-col md:flex-row top-[-100%] md:top-[inherit]">
+            
             <p>Overview</p>
             <p>Music</p>
             <p>Video</p>
             <p>Gift Cards</p>
         </div>
+        <div class="menu-icn md:hidden text-2xl flex justify-between grow pt-5"><i class="fa-solid fa-bars cursor-pointer"></i></div>
     </nav>
     <!-- navbar ended -->
 
     <main>
         <!-- content one started -->
-        <div style="background-image: url(assets/images/main-image.png);
-         width: 100%;
-          height: 1000px;
-           background-size: cover;">
-            <div class="main-text font-josefin text-white text-center items-center">
-                <h1 class="text-9xl text-center pt-[400px] font-[400]">myTunes</h1>
-                <h3 class="second-text font-josefin pt-20 text-5xl font-[350]" >Your music, movies, and TV shows take centre stage.</h3>
-                <p class="third-text font-josefin p-20 text-4xl font-light">myTunes is the best way to organize and enjoy the music, movies, and
-                    TV shows you already have -
-                    and shop for the once you want. Enjoy all the entertainment myTunes has to offer on your Mac and PC.
-                </p>
-            </div>
-        </div>
+        <div 
+  class="w-full h-[400px] sm:h-[600px] md:h-[800px] lg:h-[1000px] bg-cover bg-center bg-no-repeat flex items-center justify-center text-white text-center"
+  style="background-image: url('assets/images/main-image.png');"
+>
+  <div class="max-w-4xl px-4">
+    <h1 class="font-josefin text-5xl md:text-7xl lg:text-9xl font-normal">myTunes</h1>
+
+    <h3 class="mt-6 text-2xl md:text-4xl lg:text-5xl font-light font-josefin">
+      Your music, movies, and TV shows take centre stage.
+    </h3>
+
+    <p class="mt-6 text-lg md:text-2xl lg:text-3xl font-light font-josefin">
+      myTunes is the best way to organize and enjoy the music, movies, and TV shows you already have –
+      and shop for the ones you want. Enjoy all the entertainment myTunes has to offer on your Mac and PC.
+    </p>
+  </div>
+</div>
+
         <!-- content one ended -->
 
         <!-- purple box started -->
-        <div class="content-two bg-[#281154] text-white p-13   items-center text-center   min-h-screen ">
+        <div class="content-two bg-[#281154] text-white p-14 pb-[450px]  items-center text-center ">
             <h1 class="text-[5rem] text-center  font-josefin font-[300] tracking-tight m-4 ">
                 ♪ Music
             </h1>
             <h3 class="text-[2rem] text-center font-josefin font-[800] pb-10 ">45 million songs. Zero ads.</h3>
-            <p class="font-roboto text-[1.4rem] p-6 m-5 ">Stream over 45 million songs, Or download albums and tracks to
+            <p class="font-roboto text-[1.4rem] p-10 m-5 ">Stream over 45 million songs, Or download albums and tracks to
                 listen offline. All the music in your personal
                 myTunes library-no matter where it came from-live right alongside the Orange music catelog. Start your
                 free three
                 month trail with no commitment, and cancel anytime</p>
-            <button class="trail-btn bg-red-600 p-[12px] w-[250px] h-[80] text-2xl font-josefin font-light">Start Your
+            <button class="trail-btn text-white bg-red-600  w-[250px] h-[80] text-2xl font-josefin font-light hover:bg-black hover:text-white  transition duration-500 appearance-auto text-[buttontext] tracking-normal [word-spacing:normal] leading-normal normal-case indent-0 [text-shadow:none] inline-block text-center cursor-default box-border bg-[buttonface] m-0 
+    px-[10px] py-[9px] border-2 [border-style:outset] [border-color:buttonborder]
+">Start Your
                 Trail Now</button>
             <p class="font-josefin font-light pt-12 text-[1.3rem] p-10 ">Orange Music is available in myTunes and for
                 iOS
@@ -65,7 +74,7 @@
 
 
         <!--white box started  -->
-        <div class="white-box items-center text-center">
+        <div class="white-box items-center text-center bg-[#f9f6ff]">
             <div class="ipad-image relative bottom-[250px]">
                 <center><img src="assets/images/image-2.png" alt="ipad-image" class="max-w-full h-auto "></center>
             </div><br>
@@ -84,11 +93,11 @@
 
                 </p>
                 <button
-                    class="read-more-btn text-white bg-[#281154] p-[10px]  text-[1.3rem] font-josefin font-light">Read
+                    class="read-more-btn text-white bg-[#281154]   text-[1.3rem] font-josefin font-light appearance-auto tracking-normal leading-normal indent-[0px] [text-shadow:none]inline-block text-center cursor-pointer box-border m-0 px-[6px] py-[8.5px] border-2 [border-style:outset] [border-color:buttonborder] ">Read
                     More</button>
             </div>
             <center>
-                <div class="mac-image items-center p-10"><img src="assets/images/mac-image.png" alt=""></div>
+                <div class="mac-image items-center p-24"><img src="assets/images/mac-image.png" alt=""></div>
             </center>
         </div>
 
@@ -96,22 +105,26 @@
 
 
         <!-- content four started -->
-        <div class="content-four text-white items-center text-center font-josefin "
-            style="background-image: url(assets/images/image-3.png); width: 100% ; height: 700px; background-size: cover;">
-            <h3 class=" text-4xl p-5 font-[380] pt-64">
-                A world of entertainment. Available wherever you are.
-            </h3>
-            <p class="font-light text-3xl pt-6 pb-52">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eius
-                reiciendis aspernatur labore, quas
-                veniam nemo rem modi rerum <br>quo quidem quos hic aut exercitationem dicta sequi? Nostrum natus
-                quisquam <br>id nesciunt mollitia quasi dolorem amet ut dolore, eius ipsam?
+        <div 
+  class="content-four text-white font-josefin w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[700px] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center text-center px-4"
+  style="background-image: url('assets/images/image-3.png');"
+>
+  <h3 class="text-2xl pt-5 sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-4 ">
+    A world of entertainment. Available wherever you are.
+  </h3>
 
-            </p>
-        </div>
+  <p class="text-base sm:text-lg md:text-xl lg:text-3xl font-light max-w-4xl p-5">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eius reiciendis aspernatur labore, quas
+    veniam nemo rem modi rerum <br class="hidden md:block">
+    quo quidem quos hic aut exercitationem dicta sequi? Nostrum natus quisquam <br class="hidden md:block">
+    id nesciunt mollitia quasi dolorem amet ut dolore, eius ipsam?
+  </p>
+</div>
+
         <!-- content four ended -->
 
         <!-- gift cards started -->
-        <div class="gift-cards items-center  p-10 flex justify-evenly text-center">
+        <div class="gift-cards items-center  p-10 flex justify-evenly  flex-wrap text-center">
             <div class="card-image pt-20 w-[40rem]"><img src="assets/images/gift-card-image.png" alt=""></div>
             <div class="card-text">
                 <h2 class="font-roboto font-[400] text-3xl text-center pt-24">Gift Cards</h2><br>
@@ -123,7 +136,7 @@
                     Cards
                 </h6>
                 <center> <button
-                        class="reedem-btn text-white bg-[#281154] p-[10px]  text-[1.3rem] font-josefin font-light ">Redeem</button>
+                        class="reedem-btn text-white bg-[#281154] p-[10px]  text-[1.3rem] font-josefin font-light appearance-auto tracking-normal leading-normal indent-[0px] [text-shadow:none]inline-block text-center cursor-pointer box-border m-0 px-[6px] py-[7px] border-2 [border-style:outset] [border-color:buttonborder]">Redeem</button>
                 </center>
             </div>
 
@@ -185,6 +198,8 @@
      </div>
     <!-- last ended -->
 
+
+    <script src="https://kit.fontawesome.com/b9cdd3391c.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
