@@ -15,17 +15,59 @@
 
 <body>
     <!-- navbar started -->
-    <nav class="navbar bg-[#270082] text-white flex justify-between flex-wrap p-6 ">
-        <div class="head-text text-[2.5rem] font-roboto font-bold pr-20 pl-20 ">myTunes</div>
+    <nav class="navbar bg-[#270082] text-white flex justify-between flex-wrap  ">
+        <div class="head-text text-[2.5rem] font-roboto font-bold p-3 "><h1 class="ml-16">myTunes</h1></div>
         <div
-            class="nav-items flex  text-2xl items-center pr-20 pl-20 font-josefin font-[350] gap-9 absolute md:relative flex-col md:flex-row top-[-100%] md:top-[inherit]">
+            class="nav-items flex  text-2xl p-2 font-josefin font-[350]  absolute md:relative flex-col md:flex-row top-[-100%] md:top-[inherit]">
             
-            <p>Overview</p>
-            <p>Music</p>
-            <p>Video</p>
-            <p>Gift Cards</p>
+            
+            <h3 class="p-4 mr-12">Overview</h3>
+            <h3 class="p-4 mr-12">Music</h3>
+            <h3 class="p-4 mr-12">Video</h3>
+            <h3 class="p-4 mr-12">Gift Cards</h3>
         </div>
-        <div class="menu-icn md:hidden text-2xl flex justify-between grow pt-5"><i class="fa-solid fa-bars cursor-pointer"></i></div>
+        
+        <!-- <div class="menu-icn md:hidden text-2xl flex justify-between grow pt-5"><i class="fa-solid fa-bars cursor-pointer"></i></div> -->
+         <div class="flex  md:hidden lg:hidden p-5">
+        <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white-700">
+          <span class="sr-only">Open main menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+    <el-dialog>
+      <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+        <div tabindex="0" class="fixed inset-0 focus:outline-none">
+          <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Your Company</span>
+                <img src="assets/fav-icon/favicon-32x32.png" alt="" class="h-8 w-auto" />
+              </a>
+              <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Close menu</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                  <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="space-y-2 py-6">
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Overview</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Music</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Video</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Gift Cards
+                </div>
+                <div class="py-6">
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"></a>
+                </div>
+              </div>
+            </div>
+          </el-dialog-panel>
+        </div>
+      </dialog>
+    </el-dialog>
     </nav>
     <!-- navbar ended -->
 
@@ -132,7 +174,7 @@
                     adipisicing elit. Dicta commodi inventore pariatur dolores amet, quod enim dolore incidunt. Porro
                     incidunt nesciunt ad necessitatibus est perferendis deleniti non similique blanditiis, adipisci
                     veniam repellat qui voluptates quae consectetur illo temporibus. Impedit, perspiciatis!</p><br>
-                <h6 class="font-roboto text-lg sm:text-xl font-300 text-center p-6">Already have an Orange myTune Music Gift
+                <h6 class="font-roboto text-lg sm:text-]xl font-300 text-center p-6">Already have an Orange myTune Music Gift
                     Cards
                 </h6>
                 <center> <button

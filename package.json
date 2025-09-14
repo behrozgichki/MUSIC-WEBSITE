@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/behrozgichki/MUSIC-WEBSITE#readme",
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.12",
-    "tailwindcss": "^4.1.12"
+    "@tailwindcss/cli": "^4.1.13",
+    "tailwindcss": "^4.1.13"
   }
 }
